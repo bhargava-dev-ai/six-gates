@@ -1,0 +1,17 @@
+# Gate III. Signed by security 2026-09-18. Read at runtime by the boundary.
+# owner: security-review        last-reviewed: 2026-09-18
+
+agent: expense-triage
+
+tools:
+  read_report:
+    report_id:   { pen: application, source: session.report_id }
+
+  lookup_policy:
+    section:     { pen: model, type: string, allowlist_from: policy_sections }
+
+  recommend:
+    employee_id: { pen: application, source: session.employee_id }
+    amount:      { pen: application, source: session.claimed_amount }
+    decision:    { pen: human, allowed: [approve, reject, needs_info] }
+    rationale:   { pen: model, type: string, max_length: 2000 }

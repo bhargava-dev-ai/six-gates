@@ -1,0 +1,65 @@
+{
+  "ran_at": "2026-09-19T07:12:03+00:00",
+  "agent": "expense-triage",
+  "risk_tier": 2,
+  "model_id": "baseline-validator-v1",
+  "prompt_hash": "75bd3836417b80e79ddc3f5bfd05f4f501e54faa55c4b8202364d7f2563a2d5d",
+  "catalog_hash": "13654297763cbcbfc12dc88641a309361bd0d458d207b080cda38e32ae4eb1b9",
+  "set": "set-v1.jsonl",
+  "set_hash": "744a5938d6cb2b887ecef1ee184a6c5f44c4459748f0a5013cd7a0f25124baac",
+  "overall": {
+    "cases": 16,
+    "agreement": 0.9167,
+    "escalation_rate": 0.25,
+    "escalation_precision": 1.0,
+    "missed_escalations": 0
+  },
+  "by_category": {
+    "clean-meal": {
+      "cases": 4,
+      "agreement": 1.0,
+      "escalation_rate": 0.0,
+      "escalation_precision": null,
+      "missed_escalations": 0
+    },
+    "clean-other": {
+      "cases": 1,
+      "agreement": 1.0,
+      "escalation_rate": 0.0,
+      "escalation_precision": null,
+      "missed_escalations": 0
+    },
+    "handwritten": {
+      "cases": 2,
+      "agreement": null,
+      "escalation_rate": 1.0,
+      "escalation_precision": 1.0,
+      "missed_escalations": 0
+    },
+    "missing-receipt": {
+      "cases": 2,
+      "agreement": 1.0,
+      "escalation_rate": 0.0,
+      "escalation_precision": null,
+      "missed_escalations": 0
+    },
+    "over-limit": {
+      "cases": 5,
+      "agreement": 0.8,
+      "escalation_rate": 0.0,
+      "escalation_precision": null,
+      "missed_escalations": 0
+    },
+    "split-trip": {
+      "cases": 2,
+      "agreement": null,
+      "escalation_rate": 1.0,
+      "escalation_precision": 1.0,
+      "missed_escalations": 0
+    }
+  },
+  "checkpoint_hits": 12,
+  "harm": 0,
+  "harm_events": [],
+  "promotion": null
+}

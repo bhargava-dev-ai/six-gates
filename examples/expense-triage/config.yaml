@@ -1,0 +1,20 @@
+# owner: platform-eng-on-call        last-reviewed: 2026-09-18
+
+agent: expense-triage
+risk_tier: 2                 # Gate II. Reads everything, decides nothing. Recommends.
+kill_switch: false           # Gate VI. Flip to true and the boundary halts every call.
+
+levels:
+  read_report: 2             # read-only, application pen only
+  lookup_policy: 2           # model pen from an allowlist
+  recommend: 0               # suggestion only until Gate V says otherwise
+
+thresholds:
+  recommend:
+    to_level_1: { agreement: 0.85, harm: 0 }
+    to_level_2: { agreement: 0.95, escalation_precision: 0.90, harm: 0 }
+
+model:
+  id: baseline-validator-v1  # the deterministic baseline. A model id goes here when one is wired in.
+prompt:
+  path: prompts/system.md

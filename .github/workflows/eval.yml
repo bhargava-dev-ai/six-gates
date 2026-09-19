@@ -1,0 +1,39 @@
+# Gate V, automated. Any change to prompts, tools, evals, or the boundary re-runs the tests and the eval.
+# A failed eval blocks the merge the same way a failed test does.
+
+name: six-gates-eval
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "reference/**"
+      - "examples/**/prompts/**"
+      - "examples/**/tools/**"
+      - "examples/**/evals/**"
+      - "examples/**/config.yaml"
+      - "examples/**/agent.py"
+      - "agents/**"
+  pull_request:
+    paths:
+      - "reference/**"
+      - "examples/**"
+      - "agents/**"
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r reference/requirements.txt && pip install -e .
+      - name: Gate III boundary tests
+        run: pytest reference/boundary -q
+      - name: sixgates command tests
+        run: pytest sixgates -q
+      - name: Gate V eval, expense-triage baseline
+        run: python reference/evals/run_eval.py --agent examples/expense-triage
+      - name: Six Gates check, expense-triage
+        run: sixgates check examples/expense-triage

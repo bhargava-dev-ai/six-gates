@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sixgates"
+version = "1.0.0"
+description = "Scaffold, check, and badge an AI agent folder that follows the Six Gates method."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Bhargava P" }]
+keywords = ["ai agents", "agentic ai", "ai governance", "least privilege", "evals"]
+dependencies = ["pyyaml>=6.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+sixgates = "sixgates.cli:main"
+
+[tool.setuptools]
+packages = ["sixgates"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+sixgates = ["../templates/agent/**/*"]

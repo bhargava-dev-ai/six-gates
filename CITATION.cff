@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use the Six Gates, please cite it as below."
+title: "The Six Gates: A practitioner method for deciding, bounding, and operating AI agents"
+type: software
+authors:
+  - given-names: Bhargava
+    family-names: P
+version: 1.0.0
+date-released: 2026-09-19
+url: "https://github.com/bhargava-dev-ai/six-gates"
+repository-code: "https://github.com/bhargava-dev-ai/six-gates"
+license: CC-BY-4.0
+keywords:
+  - AI agents
+  - agentic AI
+  - AI governance
+  - AI architecture
+  - evaluation
+  - least privilege
+abstract: >-
+  Six questions asked in a fixed order, each one a gate that an agent proposal must
+  pass before it ships: Justify, Grade, Limit, Build, Prove, Run. Includes the
+  Rubric Test, the four-tier risk ladder, the three-pens model of argument
+  authority, artifact templates, a reference tool boundary, and an eval harness.

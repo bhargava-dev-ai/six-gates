@@ -1,0 +1,21 @@
+# Read at runtime by the tool boundary and the eval runner.
+# owner: <name>        last-reviewed: <yyyy-mm-dd>
+
+agent: <working-name>
+risk_tier: 2                 # Gate II. Changing this needs a signed re-grade.
+kill_switch: false           # Gate VI. true halts every tool call at the boundary.
+
+# Gate V. Current level per tool: 0 suggestion only · 1 human approved · 2 autonomous, sampled.
+levels:
+  <tool>: 0
+
+# Gate V. Thresholds are written before the first run and do not move after it.
+thresholds:
+  <tool>:
+    to_level_1: { agreement: 0.85, harm: 0 }
+    to_level_2: { agreement: 0.95, escalation_precision: 0.90, harm: 0 }
+
+model:
+  id: <model id>             # a change here re-runs Gate V
+prompt:
+  path: prompts/system.md    # hashed into every eval run record

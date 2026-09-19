@@ -1,0 +1,15 @@
+# Gate III. The pens. Read at runtime by the tool boundary; the model never sees this file.
+# owner: <security name>        last-reviewed: <yyyy-mm-dd>
+#
+# pen: application  → value comes from `source` in the session; a model-supplied value is ignored and logged
+# pen: model        → validated by type / max_length / allowlist; rendered, never executed
+# pen: human        → refused without an approval token covering (tool, argument, value)
+
+agent: <working-name>
+
+tools:
+  <tool_name>:
+    <arg>: { pen: application, source: session.<field> }
+    <arg>: { pen: human, allowed: [<value>, <value>] }
+    <arg>: { pen: model, type: string, max_length: 2000 }
+    <arg>: { pen: model, type: string, allowlist_from: <session allowlist name> }
