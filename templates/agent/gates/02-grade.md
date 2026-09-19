@@ -24,7 +24,14 @@ Ladder: 1 internal productivity · 2 analyst augmentation · 3 operational copil
 
 ## What this tier requires
 
-Copied from the ladder table in the guide. Tighten if you like. Do not loosen without writing down why.
+Defaults by tier. Tighten if you like. Do not loosen without writing down why.
+
+| Tier | Frozen eval | Human checkpoint | Audit retention | Who may promote |
+|---|---|---|---|---|
+| 1 | 50 cases | optional | 90 days | engineering lead |
+| 2 | 100 to 200 cases | required before any action | 1 year | risk owner |
+| 3 | 200 to 500 cases, scored by named professionals | required, professional's identity logged | per the profession's rule | risk owner + the professional function |
+| 4 | 500+ cases incl. adversarial, external review | required per transaction until Level 2 is earned per tool | per regulator, min. 7 years | executive risk committee |
 
 | | |
 |---|---|

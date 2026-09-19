@@ -33,4 +33,4 @@ evals/          frozen set + sha256 sidecar, and one run record per eval run.
 - Escalation review: weekly, <day>, reader <owner>
 - Deletion pass: monthly, <day>, quota at least one item removed, logged in `gates/06-run.md`
 - Off-switch test: quarterly, last tested <date>, result <pass/fail>
-- Re-grade (Gate II): quarterly, or on any trigger listed in the guide
+- Re-grade (Gate II): quarterly, or on any trigger: new model version, prompt edit, tool added or changed, new user group or channel, a downstream system that starts acting on the output, a standing approval widened, an owner change, an incident

@@ -4,7 +4,7 @@ Working title: **The Six Gates: How to decide, bound, and operate AI agents that
 Target: 55,000 to 65,000 words. Fourteen chapters in four parts, plus appendices.
 Audience: architects, tech leads, product owners, and risk reviewers who are asked "we want to build an AI agent" and have no method to answer with. Readable by a non-engineer; the code lives in the appendices.
 
-Status legend: **have** = exists in the guide or repo · **expand** = exists in outline form, needs depth · **collect** = needs real cases from running the gates with teams.
+Status legend: **have** = exists in the implementation guide (subscriber edition) or in this repo · **expand** = exists in outline form, needs depth · **collect** = needs real cases from running the gates with teams.
 
 ## Part I · Why gates
 

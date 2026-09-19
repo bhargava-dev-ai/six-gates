@@ -92,7 +92,7 @@ examples/expense-triage/ the worked example, all six artifacts filled in
 
 ## Using this in your organisation
 
-The gates are a team-level, one-hour walk through the terrain that NIST's AI Risk Management Framework and ISO/IEC 42001 cover at organisation level. The six artifacts are the evidence those frameworks ask for, produced as a by-product of deciding rather than as a separate compliance exercise. See the "Small teams and large ones" section of the guide.
+The gates are a team-level, one-hour walk through the terrain that NIST's AI Risk Management Framework and ISO/IEC 42001 cover at organisation level. The six artifacts are the evidence those frameworks ask for, produced as a by-product of deciding rather than as a separate compliance exercise. A newsletter edition on mapping the gates to both frameworks is planned; see `docs/book-outline.md`.
 
 ## Contributing
 
