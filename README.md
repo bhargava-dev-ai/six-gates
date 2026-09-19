@@ -52,7 +52,7 @@ passed: 0 failing check(s), 0 warning(s)
 
 ## For the team running the session
 
-*Running the Six Gates* is the 39-page implementation guide: the one-hour run sheet, who signs each gate and what they are signing for, pass criteria, fill-in templates, the promotion path, the ledger layout, a worked example with all six pages filled in, and a glossary. It goes to newsletter subscribers. Comment "guide" under any edition of [the newsletter](https://www.linkedin.com/newsletters/7507085771422457856/), or message the author on LinkedIn. The method's home page is [bhargava-dev-ai.github.io/six-gates](https://bhargava-dev-ai.github.io/six-gates/).
+*Running the Six Gates* is the 39-page implementation guide: the one-hour run sheet, who signs each gate and what they are signing for, pass criteria, fill-in templates, the promotion path, the ledger layout, a worked example with all six pages filled in, and a glossary. It is for newsletter subscribers. [Subscribe](https://www.linkedin.com/newsletters/7507085771422457856/), then comment "guide" under any edition or message the author on LinkedIn. The method's home page is [bhargava-dev-ai.github.io/six-gates](https://bhargava-dev-ai.github.io/six-gates/).
 
 ## Run the session in one hour
 
